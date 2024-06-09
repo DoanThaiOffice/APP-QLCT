@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llBottomSheetMenu"
+    style="@style/AppBottomSheetDialogTheme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:background="@drawable/background_edittext"
+        android:text="Loại tiền tệ"
+        android:id="@+id/tvLoaiTienTe"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_edittext"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/txtLoaiTienTe"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/background_edittext"
+            android:hint="VNĐ"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHuyBo"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/button_cancel"
+                android:text="Hủy bỏ"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/ic_edit"
+                app:iconTint="@color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHoanThanh"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/button_success"
+                android:text="Chỉnh sửa"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/ic_edit"
+                app:iconTint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

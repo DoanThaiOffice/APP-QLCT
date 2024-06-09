@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".activity.DanhMucActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tbDanhMuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_danhmuc"
+        app:navigationIcon="@drawable/ic_left"
+        app:navigationIconTint="@color/white">
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/tgbDanhMuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="25dp"
+            app:singleSelection="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDanhMucThu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#5DB075"
+                android:text="Thu"
+                android:textColor="@color/white"
+                android:elevation="-15dp"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDanhMucChi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Chi"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                android:textAllCaps="false" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <FrameLayout
+        android:id="@+id/flDanhMuc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tbDanhMuc"
+        android:background="@drawable/background_radius" />
+</RelativeLayout>

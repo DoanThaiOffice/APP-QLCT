@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".activity.ViTienActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tbViTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_danhmuc"
+        app:navigationIcon="@drawable/ic_left"
+        app:navigationIconTint="@color/white">
+
+        <TextView
+            android:id="@+id/txtTBTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="Ví Tiền"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <RelativeLayout
+        android:id="@+id/llViTien"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tbViTien"
+        android:background="@drawable/background_radius">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvViTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_vitien"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+</RelativeLayout>

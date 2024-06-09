@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuHome" android:title="Trang chủ" android:icon="@drawable/ic_report" />
+    <item android:id="@+id/menuThuNhap" android:title="Thu chi" android:icon="@drawable/ic_thuchi"/>
+    <item android:id="@+id/menuCaiDat" android:title="Cài đặt" android:icon="@drawable/ic_setting"/>
+</menu>

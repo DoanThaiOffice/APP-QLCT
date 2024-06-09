@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/background_edittext"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgHinhDanhMuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cat_clipboard" />
+
+        <TextView
+            android:id="@+id/txtTenDanhMuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toStartOf="@id/txtSoTien"
+            android:layout_toEndOf="@id/imgHinhDanhMuc"
+            android:maxLines="1"
+            android:text="Tên danh mục" />
+
+        <TextView
+            android:id="@+id/txtGhiChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTenDanhMuc"
+            android:layout_marginStart="15dp"
+            android:layout_toStartOf="@id/txtSoTien"
+            android:layout_toEndOf="@id/imgHinhDanhMuc"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:text="Ghi chú" />
+
+        <TextView
+            android:id="@+id/txtSoTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/imgUpDown"
+            android:text="1,000,000"
+            android:textColor="@color/button_cancel"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/imgUpDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_down"
+            app:tint="@color/button_cancel" />
+
+        <TextView
+            android:id="@+id/txtNgayChiTieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/imgUpDown"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            android:text="01/07/1994" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

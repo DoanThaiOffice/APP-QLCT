@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Chế độ tối"
+                    app:drawableStartCompat="@drawable/ic_chedotoi"
+                    app:drawableTint="@color/color_icon_checked" />
+
+                <Switch
+                    android:id="@+id/swcCheDoToi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtViTien"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Ví Tiền"
+                app:drawableEndCompat="@drawable/ic_right"
+                app:drawableStartCompat="@drawable/ic_wallet"
+                app:drawableTint="@color/color_icon_checked" />
+
+            <RelativeLayout
+                android:id="@+id/rlLoaiTienTe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Loại tiền tệ"
+                    app:drawableStartCompat="@drawable/ic_coin"
+                    app:drawableTint="@color/color_icon_checked" />
+
+                <TextView
+                    android:id="@+id/txtLoaiTienTe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="VNĐ"
+                    android:textColor="@color/color_icon_checked" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtDanhMuc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_line"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Danh mục"
+                app:drawableEndCompat="@drawable/ic_right"
+                app:drawableStartCompat="@drawable/ic_danhmuc"
+                app:drawableTint="@color/color_icon_checked" />
+
+            <TextView
+                android:id="@+id/txtThongTinLienHe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Thông tin liên hệ"
+                app:drawableEndCompat="@drawable/ic_right"
+                app:drawableStartCompat="@drawable/ic_lienhe"
+                app:drawableTint="@color/color_icon_checked" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".activity.ContainerActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tbThemChiTieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_left"
+        app:navigationIconTint="@color/white">
+
+        <TextView
+            android:id="@+id/txtTBTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="Thêm khoản thu chi"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tbThemChiTieu"
+        android:background="@drawable/background_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <EditText
+                    android:id="@+id/txtSoTien"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/background_edittext"
+                    android:hint="Số tiền"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/button_cancel"
+                    android:textColorHint="@color/button_cancel"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txtLoaiTienTe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:text="VNĐ" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlChonViTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/background_edittext"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:minHeight="55dp"
+                android:paddingEnd="10dp">
+
+                <ImageView
+                    android:id="@+id/imgHinhViTien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cat_clipboard" />
+
+                <TextView
+                    android:id="@+id/txtTenViTien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@id/imgHinhViTien"
+                    android:text="Ví tiền"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSoTienVi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTenViTien"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@id/imgHinhViTien"
+                    android:text="Số tiền" />
+
+                <TextView
+                    android:id="@+id/txtSoTienConLai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTenViTien"
+                    android:layout_toEndOf="@id/txtSoTienVi"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlChonDanhMuc"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/background_edittext"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <ImageView
+                    android:id="@+id/imgHinhDanhMuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cat_clipboard" />
+
+                <TextView
+                    android:id="@+id/txtTenDanhMuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@id/imgHinhDanhMuc"
+                    android:text="Tên danh mục"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtLoaiDanhMuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTenDanhMuc"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@id/imgHinhDanhMuc"
+                    android:text="Loại danh mục" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/txtGhiChu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/background_edittext"
+                android:drawableStart="@drawable/ic_note"
+                android:drawablePadding="15dp"
+                android:hint="Ghi chú"
+                android:padding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+            <TextView
+                android:id="@+id/txtNgayChiTieu"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/background_edittext"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="01/07/1994" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHoanThanh"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/button_success"
+        android:text="Lưu"
+        android:textAllCaps="false" />
+</RelativeLayout>
